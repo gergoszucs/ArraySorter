@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ArraySorter.AbstractSort&lt;T&gt;">
+    <Position X="6" Y="2.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractSort.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ArraySorter.ArraySorter&lt;T&gt;">
+    <Position X="5" Y="0.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>ArraySorter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArraySorter.BubbleSort&lt;T&gt;">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BubbleSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArraySorter.HeapSort&lt;T&gt;">
+    <Position X="8" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAQAAAAAAABAAAAAAAAAAAAoAA=</HashCode>
+      <FileName>HeapSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArraySorter.InsertionSort&lt;T&gt;">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InsertionSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArraySorter.MergeSort&lt;T&gt;">
+    <Position X="4" Y="6.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MergeSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArraySorter.QuickSort&lt;T&gt;">
+    <Position X="6.25" Y="4.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAQAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuickSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ArraySorter.ISortingAlgorithm&lt;T&gt;">
+    <Position X="2.5" Y="2.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISortingAlgorithm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ArraySorter.Algorithms">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAQAAAAACQABAAAA=</HashCode>
+      <FileName>Algorithms.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
