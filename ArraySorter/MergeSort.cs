@@ -32,19 +32,19 @@ namespace ArraySorter
                 else
                 {
                     temp[pos++] = arr[mid++];
-                }     
+                }
             }
 
             while (left <= eol)
             {
                 temp[pos++] = arr[left++];
             }
-                
+
             while (mid <= right)
             {
                 temp[pos++] = arr[mid++];
             }
-                
+
             for (var i = 0; i < num; i++)
             {
                 arr[right] = temp[right];

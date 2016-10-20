@@ -42,7 +42,7 @@ namespace ArraySorter
                 case Algorithms.Quick:
                     return new QuickSort<T>().Sort(values);
                 default:
-                    throw new IllegalEnumValueException("Unrecognized algorithm name");
+                    throw new IllegalAlgorithmException("Unrecognized algorithm name");
             }
         }
 
@@ -71,7 +71,7 @@ namespace ArraySorter
                 case Algorithms.Quick:
                     return new QuickSort<T>().Sort(values, out originalOrder);
                 default:
-                    throw new IllegalEnumValueException("Unrecognized algorithm name");
+                    throw new IllegalAlgorithmException("Unrecognized algorithm name");
             }
         }
     }

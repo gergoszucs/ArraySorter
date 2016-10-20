@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ArraySorter
 {
@@ -26,6 +27,7 @@ namespace ArraySorter
         {
             T[] sortedArray = Sort((T[])unsortedArray.Clone());
             originalOrder = new int[unsortedArray.Length];
+            List<int> foundIndices = new List<int>();
 
             var counter = 0;
 
@@ -33,8 +35,9 @@ namespace ArraySorter
             {
                 for (var i = 0; i < unsortedArray.Length; i++)
                 {
-                    if (element.Equals(unsortedArray[i]))
+                    if (element.Equals(unsortedArray[i]) && !foundIndices.Contains(i + 1))
                     {
+                        foundIndices.Add(i + 1);
                         originalOrder[counter++] = i + 1;
                         break;
                     }

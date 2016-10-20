@@ -10,7 +10,7 @@ namespace ArraySorter
     {
         public override T[] Sort(T[] arr)
         {
-            SortQuick(arr, 0, arr.Length - 1);
+            SortQuick(arr, 0, arr.Length);
 
             return arr;
         }
@@ -18,47 +18,49 @@ namespace ArraySorter
         private int Partition(T[] arr, int left, int right)
         {
             T pivot = arr[left];
+            int start = left;
+            left++;
+            right--;
 
             while (true)
             {
-                while (arr[left].CompareTo(pivot) < 0)
+                while (left <= right && arr[left].CompareTo(pivot) <= 0)
                 {
                     left++;
                 }
                     
-                while (arr[right].CompareTo(pivot) > 0)
+                while (left <= right && arr[right].CompareTo(pivot) > 0)
                 {
                     right--;
                 }
                     
-                if (left < right)
+                if (left > right)
                 {
-                    T temp = arr[right];
-                    arr[right] = arr[left];
-                    arr[left] = temp;
+                    arr[start] = arr[left - 1];
+                    arr[left - 1] = pivot;
+
+                    return left;
                 }
-                else
-                {
-                    return right;
-                }
+
+                T temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
             }
         }
 
         private void SortQuick(T[] arr, int left, int right)
         {
+            if (arr == null || arr.Length <= 1)
+            {
+                return;
+            }
+                
             if (left < right)
             {
-                var pivot = Partition(arr, left, right);
+                int pivotIdx = Partition(arr, left, right);
 
-                if (pivot > 1)
-                {
-                    SortQuick(arr, left, pivot - 1);
-                }
-                    
-                if (pivot + 1 < right)
-                {
-                    SortQuick(arr, pivot + 1, right);
-                }  
+                SortQuick(arr, left, pivotIdx - 1);
+                SortQuick(arr, pivotIdx, right);  
             }
         }
     }
